@@ -1,0 +1,2 @@
+dbt-mysql==1.7.0
+pandas==2.3.3

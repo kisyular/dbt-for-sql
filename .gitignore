@@ -13,3 +13,7 @@ Thumbs.db
 node_modules/
 .env
 .claude/
+venv/
+__pycache__/
+*.pyc
+*.pyo

@@ -1,0 +1,15 @@
+# gitignore for sql and dtb files
+*.sql
+*.dtb
+*.bak
+*.backup
+*.old
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+node_modules/
+.env
+.claude/

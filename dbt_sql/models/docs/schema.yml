@@ -1,0 +1,110 @@
+models:
+  - name: taxi_trips
+    description: '{{ doc("taxi_trips_model") }}'
+    columns:
+      - name: pickup
+        description: '{{ doc("pickup") }}'
+      - name: dropoff
+        description: '{{ doc("dropoff") }}'
+      - name: passengers
+        description: '{{ doc("passengers") }}'
+      - name: distance
+        description: '{{ doc("distance") }}'
+      - name: fare
+        description: '{{ doc("fare") }}'
+      - name: tip
+        description: '{{ doc("tip") }}'
+      - name: tolls
+        description: '{{ doc("tolls") }}'
+      - name: total
+        description: '{{ doc("total") }}'
+      - name: color
+        description: '{{ doc("color") }}'
+      - name: payment
+        description: '{{ doc("payment") }}'
+      - name: pickup_zone
+        description: '{{ doc("pickup_zone") }}'
+      - name: dropoff_zone
+        description: '{{ doc("dropoff_zone") }}'
+      - name: pickup_borough
+        description: '{{ doc("pickup_borough") }}'
+      - name: dropoff_borough
+        description: '{{ doc("dropoff_borough") }}'
+        
+  - name: over_nine_miles
+    description: '{{ doc("over_nine_miles_model") }}'
+    columns:
+      - name: pickup
+        description: '{{ doc("pickup") }}'
+      - name: dropoff
+        description: '{{ doc("dropoff") }}'
+      - name: passengers
+        description: '{{ doc("passengers") }}'
+      - name: distance
+        description: '{{ doc("distance") }}'
+      - name: fare
+        description: '{{ doc("fare") }}'
+      - name: tip
+        description: '{{ doc("tip") }}'
+      - name: tolls
+        description: '{{ doc("tolls") }}'
+      - name: total
+        description: '{{ doc("total") }}'
+      - name: color
+        description: '{{ doc("color") }}'
+      - name: payment
+        description: '{{ doc("payment") }}'
+      - name: pickup_zone
+        description: '{{ doc("pickup_zone") }}'
+      - name: dropoff_zone
+        description: '{{ doc("dropoff_zone") }}'
+      - name: pickup_borough
+        description: '{{ doc("pickup_borough") }}'
+      - name: dropoff_borough
+        description: '{{ doc("dropoff_borough") }}'
+        
+  - name: cross_borough
+    description: '{{ doc("cross_borough_model") }}'
+    columns:
+      - name: pickup
+        description: '{{ doc("pickup") }}'
+      - name: dropoff
+        description: '{{ doc("dropoff") }}'
+      - name: passengers
+        description: '{{ doc("passengers") }}'
+      - name: distance
+        description: '{{ doc("distance") }}'
+      - name: fare
+        description: '{{ doc("fare") }}'
+      - name: tip
+        description: '{{ doc("tip") }}'
+      - name: tolls
+        description: '{{ doc("tolls") }}'
+      - name: total
+        description: '{{ doc("total") }}'
+      - name: color
+        description: '{{ doc("color") }}'
+      - name: payment
+        description: '{{ doc("payment") }}'
+      - name: pickup_zone
+        description: '{{ doc("pickup_zone") }}'
+      - name: dropoff_zone
+        description: '{{ doc("dropoff_zone") }}'
+      - name: pickup_borough
+        description: '{{ doc("pickup_borough") }}'
+      - name: dropoff_borough
+        description: '{{ doc("dropoff_borough") }}'
+        
+  - name: credit_card_count
+    description: '{{ doc("credit_card_count_model") }}'
+    columns:
+      - name: payment
+        description: '{{ doc("payment") }}'
+      - name: credit_card_count
+        description: '{{ doc("credit_card_count_column") }}'
+  
+  - name: avg_num_dropoff_manhattan
+    description: '{{ doc("avg_num_dropoff_manhattan_model") }}'
+    columns:
+      - name: avg_num_passengers_manhattan
+        description: '{{ doc("avg_num_passengers_manhattan_column") }}'

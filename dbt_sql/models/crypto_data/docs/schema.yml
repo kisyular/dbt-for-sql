@@ -1,0 +1,130 @@
+version: 2
+
+models:
+  - name: crypto_data
+    description: '{{ doc("crypto_data_model") }}'
+    columns:
+      - name: currency
+        description: '{{ doc("currency") }}'
+      - name: detail_date
+        description: '{{ doc("detail_date") }}'
+      - name: closing_price
+        description: '{{ doc("closing_price") }}'
+      - name: 24_hour_open
+        description: '{{ doc("hour_24_open") }}'
+      - name: 24h_high_usd
+        description: '{{ doc("high_24h_usd") }}'
+      - name: 24h_low_usd
+        description: '{{ doc("low_24h_usd") }}'
+
+  - name: btc
+    description: '{{ doc("btc_model") }}'
+    columns:
+      - name: currency
+        description: '{{ doc("currency") }}'
+      - name: detail_date
+        description: '{{ doc("detail_date") }}'
+      - name: closing_price
+        description: '{{ doc("closing_price") }}'
+      - name: 24_hour_open
+        description: '{{ doc("hour_24_open") }}'
+      - name: 24h_high_usd
+        description: '{{ doc("high_24h_usd") }}'
+      - name: 24h_low_usd
+        description: '{{ doc("low_24h_usd") }}'
+
+  - name: eth
+    description: '{{ doc("eth_model") }}'
+    columns:
+      - name: currency
+        description: '{{ doc("currency") }}'
+      - name: detail_date
+        description: '{{ doc("detail_date") }}'
+      - name: closing_price
+        description: '{{ doc("closing_price") }}'
+      - name: 24_hour_open
+        description: '{{ doc("hour_24_open") }}'
+      - name: 24h_high_usd
+        description: '{{ doc("high_24h_usd") }}'
+      - name: 24h_low_usd
+        description: '{{ doc("low_24h_usd") }}'
+
+  - name: link
+    description: '{{ doc("link_model") }}'
+    columns:
+      - name: currency
+        description: '{{ doc("currency") }}'
+      - name: detail_date
+        description: '{{ doc("detail_date") }}'
+      - name: closing_price
+        description: '{{ doc("closing_price") }}'
+      - name: 24_hour_open
+        description: '{{ doc("hour_24_open") }}'
+      - name: 24h_high_usd
+        description: '{{ doc("high_24h_usd") }}'
+      - name: 24h_low_usd
+        description: '{{ doc("low_24h_usd") }}'
+
+  - name: oxt
+    description: '{{ doc("oxt_model") }}'
+    columns:
+      - name: currency
+        description: '{{ doc("currency") }}'
+      - name: detail_date
+        description: '{{ doc("detail_date") }}'
+      - name: closing_price
+        description: '{{ doc("closing_price") }}'
+      - name: 24_hour_open
+        description: '{{ doc("hour_24_open") }}'
+      - name: 24h_high_usd
+        description: '{{ doc("high_24h_usd") }}'
+      - name: 24h_low_usd
+        description: '{{ doc("low_24h_usd") }}'
+
+  - name: xlm
+    description: '{{ doc("xlm_model") }}'
+    columns:
+      - name: currency
+        description: '{{ doc("currency") }}'
+      - name: detail_date
+        description: '{{ doc("detail_date") }}'
+      - name: closing_price
+        description: '{{ doc("closing_price") }}'
+      - name: 24_hour_open
+        description: '{{ doc("hour_24_open") }}'
+      - name: 24h_high_usd
+        description: '{{ doc("high_24h_usd") }}'
+      - name: 24h_low_usd
+        description: '{{ doc("low_24h_usd") }}'
+
+  - name: xrp
+    description: '{{ doc("xrp_model") }}'
+    columns:
+      - name: currency
+        description: '{{ doc("currency") }}'
+      - name: detail_date
+        description: '{{ doc("detail_date") }}'
+      - name: closing_price
+        description: '{{ doc("closing_price") }}'
+      - name: 24_hour_open
+        description: '{{ doc("hour_24_open") }}'
+      - name: 24h_high_usd
+        description: '{{ doc("high_24h_usd") }}'
+      - name: 24h_low_usd
+        description: '{{ doc("low_24h_usd") }}'
+
+  - name: btc_closing_above_3k
+    description: '{{ doc("btc_closing_above_3k_model") }}'
+    columns:
+      - name: currency
+        description: '{{ doc("currency") }}'
+      - name: detail_date
+        description: '{{ doc("detail_date") }}'
+      - name: closing_price
+        description: '{{ doc("closing_price") }}'
+      - name: 24_hour_open
+        description: '{{ doc("hour_24_open") }}'
+      - name: 24h_high_usd
+        description: '{{ doc("high_24h_usd") }}'
+      - name: 24h_low_usd
+        description: '{{ doc("low_24h_usd") }}'

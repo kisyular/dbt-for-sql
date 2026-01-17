@@ -1,5 +1,4 @@
 # gitignore for sql and dtb files
-*.sql
 *.dtb
 *.bak
 *.backup

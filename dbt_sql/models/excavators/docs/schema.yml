@@ -1,0 +1,78 @@
+version: 2
+
+models:
+  - name: excavators
+    description: '{{ doc("excavators_model") }}'
+    columns:
+      - name: excavator_id
+        description: '{{ doc("excavator_id") }}'
+        tests:
+          - not_null
+      - name: oil_level
+        description: '{{ doc("oil_level") }}'
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['P', 'F']
+      - name: air_filter
+        description: '{{ doc("air_filter") }}'
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['P', 'F']
+      - name: coolant_level
+        description: '{{ doc("coolant_level") }}'
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['P', 'F']
+      - name: hydraulic_valves
+        description: '{{ doc("hydraulic_valves") }}'
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['P', 'F']
+
+  - name: jobs
+    description: '{{ doc("jobs_model") }}'
+    columns:
+      - name: job_id
+        description: '{{ doc("job_id") }}'
+        tests:
+          - not_null
+      - name: excavator_id
+        description: '{{ doc("excavator_id") }}'
+        tests:
+          - not_null
+      - name: city
+        description: '{{ doc("city") }}'
+        tests:
+          - not_null
+      - name: manager
+        description: '{{ doc("manager") }}'
+        tests:
+          - not_null
+
+  - name: maintenance
+    description: '{{ doc("maintenance_model") }}'
+    columns:
+      - name: job_id
+        description: '{{ doc("job_id") }}'
+        tests:
+          - not_null
+      - name: excavator_id
+        description: '{{ doc("excavator_id") }}'
+        tests:
+          - not_null
+
+  - name: maintenance_cte
+    description: '{{ doc("maintenance_cte_model") }}'
+    columns:
+      - name: job_id
+        description: '{{ doc("job_id") }}'
+        tests:
+          - not_null
+      - name: excavator_id
+        description: '{{ doc("excavator_id") }}'
+        tests:
+          - not_null

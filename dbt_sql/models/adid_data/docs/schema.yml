@@ -1,0 +1,37 @@
+version: 2
+
+# To Do: 
+# 1. Include some of the built in dbt tests into the columns.
+# 2. Create a custom dbt test to that will fail if any of the cohorts have more than 100 distinct adids.
+
+models:
+  - name: adid_data
+    description: '{{ doc("adid_data_model") }}'
+    columns:
+      - name: adid
+        description: '{{ doc("adid") }}'
+        tests:
+          - unique
+          - not_null
+      - name: latitude
+        description: '{{ doc("latitude") }}'
+        tests:
+          - not_null
+      - name: longitude
+        description: '{{ doc("longitude") }}'
+        tests:
+          - not_null
+      - name: city
+        description: '{{ doc("adid_city") }}'
+        tests:
+          - not_null
+      - name: eventdate
+        description: '{{ doc("eventdate") }}'
+        tests:
+          - not_null
+      - name: cohort
+        description: '{{ doc("cohort") }}'
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['one', 'two', 'three', 'four', 'five', 'six']

@@ -35,3 +35,4 @@ models:
           - not_null
           - accepted_values:
               values: ['one', 'two', 'three', 'four', 'five', 'six']
+          - ensure_cohort_size_max_100
